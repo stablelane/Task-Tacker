@@ -16,6 +16,13 @@ document.addEventListener('click', (e) => {
     }
 })
 
+//Add an event listener for task-text input so that pressing the Enter key adds a task.
+document.addEventListener('keypress', (e) => {
+    if(e.key === 'Enter' && e.target.id === 'task-text') {
+        makeTask(e)
+    }
+})
+
 
 let taskID = 1111
 
