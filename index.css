@@ -1,6 +1,7 @@
 html {
     margin: 0;
 }
+
 body {
     display: flex;
     justify-content: center;
@@ -8,9 +9,11 @@ body {
     min-height: 100dvh;
     margin: 0;
 }
+
 * {
     box-sizing: border-box;
 }
+
 .container {
     min-width: 600px;
     max-width: 810px;
@@ -62,7 +65,7 @@ body {
     background-color: #2f2f2f;
     color: white;
     border: none;
-    width:  1.5em;
+    width: 1.5em;
     height: 1.35em;
     border-radius: 0.3em;
     font-size: 2em;
