@@ -1,0 +1,122 @@
+html {
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    min-width: 600px;
+    max-width: 810px;
+    width: 80%;
+    height: 50vh;
+    border: 3px solid black;
+    border-radius: 2em;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+    overflow: scroll;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 1em 7em;
+}
+
+.container h1 {
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.task-input {
+    display: flex;
+    border: 2px solid black;
+    padding: 0.2em;
+    border-radius: 0.5em;
+    text-wrap: nowrap;
+    margin-bottom: 20px;
+}
+
+.task-input input {
+    width: 92%;
+    height: 100%;
+    margin-left: 10px;
+    border: none;
+    top: 0px;
+    font-size: 1.2em;
+}
+
+.task-input input::placeholder {
+    color: #a1a3a1;
+}
+
+.task-input input:focus {
+    outline: none;
+}
+
+.task-input button {
+    background-color: #2f2f2f;
+    color: white;
+    border: none;
+    width:  1.5em;
+    height: 1.35em;
+    border-radius: 0.3em;
+    font-size: 2em;
+    padding: 0;
+}
+
+/* task class */
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: #a1a3a1 1px solid;
+}
+
+.task p {
+    font-size: 1.3em;
+    margin: 10px 0px 10px 10px;
+    width: 100%;
+}
+
+.task img {
+    width: 20px;
+}
+
+.strike {
+    text-decoration: line-through;
+    color: #6b6d6b;
+}
+
+input[type="checkbox"] {
+    width: 23px;
+    height: 23px;
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #f2f2f2;
+    border: 1px solid #2f2f2f;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #6b6d6b;
+    border: 1px solid #2f2f2f;
+}
+
+input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    width: 6px;
+    height: 12px;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
